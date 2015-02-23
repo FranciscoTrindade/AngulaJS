@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" >
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Engenharia Web</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <nav class="navbar navbar-default navbar-static-top ">
+           <div class="container">
+                    <br>
+                    <img src="./img/angularjs.jpg" alt="..." width="50%" height="50%" class="img-rounded">
+           </div>
+            <br>      
+        </nav>
+        
+        
+        <div class = "container" ng-controller="mainController">
+
+            <!-- Botões -->
+            <button type="button" onClick="location.href='./index.html'"class="btn btn-default">{{link1}}</button>
+            <button type="button" onClick="location.href='./introduction.html'"class="btn btn-danger">{{link2}}</button>
+            <button type="button" onClick="location.href='./angular.html'"class="btn btn-success">{{link3}}</button>
+            <button type="button" onClick="location.href='./code.html'"class="btn btn-danger">{{link4}}</button>
+            <button type="button" onClick="location.href='./about.html'" class="btn btn-danger">{{link7}}</button>
+
+            <p>
+            <div class="jumbotron">
+                <h1>AngularJS</h1>
+                <br><br><br>
+                <h2> MVC Architecture
+                </h2>
+                <br>
+                <h4>
+
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 Model - <small> Data which is used merged with the template to produce the view.</small>
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 View - <small> Is what users sees. </small>
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 Controller - <small> Is the code behind the view. Contruct the model and publish it to the view along with callback methods.</small>
+                 <br><br>
+
+                <div align="center">
+                    <img src="./img/arq.png" alt="..." width="80%" height="80%"  class="img-rounded">
+                </div>
+
+                 </h4>
+
+
+                <h2> Core Features
+                </h2>
+                <br>
+                <h4>
+
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 Data-binding - <small> It is the automatic synchronization of data between model and view components.</small>
+                 <br><br>
+
+                <div align="center">
+                    <img src="./img/db1.jpg" alt="..." width="80%" height="80%"  class="img-rounded">
+                </div>
+
+                <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 Scope - <small> These are objects that refer to the model. They act as a glue between controller and view.</small>
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 Directives - <small> Directives are markers on DOM elements such as elements, attributes, css, and more. These can be used to create custom HTML tags that serve as new, custom widgets. AngularJS has built-in directives such as ngBind, ngModel, etc.</small>
+                 <br><br>
+
+                 
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 Dependency Injection - 
+                 <br><br>
+
+                 </h4>
+
+
+
+                <h2> Directives
+                </h2>
+                <br>
+                <h4>
+
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 ng-app - <small> Declares an element as a root element of the application allowing behavior to be modified through custom HTML tags</small>
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 ng-bind - <small>Automatically changes the text of a HTML element to the value of a given expression</small>
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+                 ng-model - <small> Similar to ng-bing, but allows two-way data binding between the view and the scope</small>
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+                 ng-repeat - <small> Instantiate an element once per item from a collection</small>
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span> 
+                 ng-repeat - <small> Instantiate an element once per item from a collection</small>
+                 <br><br>
+
+                 </h4>
+
+
+                <h2> Advantages
+                </h2>
+                <br>
+                <h5>
+
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 It provides data binding capability to HTML. Thus, it gives user a rich and responsive experience.
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 AngularJS code is unit testable.
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 AngularJS provides reusable components.
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 With AngularJS, the developers can achieve more functionality with short code.
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 In AngularJS, views are pure html pages, and controllers written in JavaScript do the business processing.
+                 <br><br>
+
+                 </h5>
+
+
+                <h2> Disadvantages
+                </h2>
+                <br>
+                <h5>
+
+                <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 If the user of your application disables JavaScript, then nothing would be visible, except the basic page
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 Terrible documentation, you have to google a lot of information.
+                 <br><br>
+
+                 <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+                 ... 
+                 <br><br>
+
+                 </h5>
+
+            </div>
+
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="./xicojs/app.js"></script>
+
+    </body>
+</html>

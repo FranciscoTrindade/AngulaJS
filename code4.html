@@ -24,7 +24,7 @@
             <!-- Botões -->
             <button type="button" onClick="location.href='./index.html'"class="btn btn-default">{{link1}}</button>
             <button type="button" onClick="location.href='./introduction.html'"class="btn btn-danger">{{link2}}</button>
-            <button type="button" onClick="location.href='./angular.html'" class="btn btn-danger">{{link3}}</button>
+            <button type="button" onClick="location.href='./angular.html'"class="btn btn-danger">{{link3}}</button>
             <button type="button" onClick="location.href='./code.html'"class="btn btn-success">{{link4}}</button>
             <button type="button" onClick="location.href='./about.html'" class="btn btn-danger">{{link7}}</button>
 
@@ -33,40 +33,42 @@
                 <h1>Code</h1>
                 <p></p>
 
-                
+    
+    <div align="center">  
 
-                <div align="center">
+        <div align="left"><h3>Html :> </h3></right></div>
+        <br>
+        <img src="./img/code/html4.jpg" alt="..." width="95%" height="95%"  class="img-rounded">
+        <div align="left"><h3>Java Script :> </h3></right></div>
+        <br>
+        <img src="./img/code/js4.jpg" alt="..." width="45%" height="45%"  class="img-rounded">
+        <hr>
+        <br>
+        <div align="left"><h3>Running :></h3></right></div>
+        <br>        
+        
+        <h2> List of tasks </h2>
+        <h3>Number of tasks: {{getTotalTodos()}}</h3>
 
-                    <div align="left"><h3>Html :> </h3></right></div>
-                    <br>
-                    <img src="./img/code/codeContador.jpg" alt="..." width="80%" height="80%"  class="img-rounded">
-                    <hr>
-                    <br>
-                    <div align="left"><h3>Running :></h3></right></div>
-                    <br>
-                    
+        <li ng-repeat="todo in todos">
+            <input type="checkbox" ng-model="todo.done">
+            <span class="done-{{todo.done}}">{{todo.text}}</span>
+        </li>
+        <p>
+        <form class="form-horizontal">
+            <input type="text" placeholder="Enter a task here" ng-model="formTodoText" ng-model-instant >
+            <button type="button" ng-click="addTodo()" class="btn btn-warning"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add</button>
 
-                    <h2>Counter: {{count}}</h2>
-                    
-                    <br><br>
-                    
-                    <button type="button" ng-click="count = count + 1" ng-init="count=0" class="btn btn-warning"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Increment</button>
-                    
-                    <br><br>
-                    
-                    <button type="button" ng-click="count = 0"  ng-init="count=0" class="btn btn-default"> <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Reset</button>
-
-                   
-
-                </div>
+        </form>
+        <br>
+        <button type="button" ng-click="clearCompleted()" class="btn btn-default"> <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Remove</button>
 
 
-
-                <div align="right">
-                    <nav>
-                      <ul class="pagination pagination-sm">
+              <div align="right">
+                  <nav>
+                       <ul class="pagination pagination-sm">
                         <li>
-                          <a href="./code.html" aria-label="Previous">
+                          <a href="./code3.html" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                           </a>
                         </li>
@@ -76,16 +78,14 @@
                         <li><a href="./code4.html">4</a></li>
                         <li><a href="./code5.html">5</a></li>
                         <li>
-                          <a href="./code3.html" aria-label="Next">
+                          <a href="./code5.html" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                           </a>
                         </li>
                       </ul>
                     </nav>
                 </div>
-
                 </div>
-
             </div>
 
 
@@ -94,8 +94,15 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.13/angular.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="./js/underscore-min.js"></script>
         <script src="js/bootstrap.min.js"></script>
+        <script scr="css/bootstrap.css"></script>
+        <link rel = "stylesheet" href = "todo.css">
         <script src="./xicojs/app.js"></script>
+
+
+
+
 
     </body>
 </html>
